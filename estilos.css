@@ -1,0 +1,64 @@
+:root {
+  --bg: #0d0221;
+  --pumpkin: #ff6b1a;
+  --toxic: #39ff14;
+  --bone: #f2e9dc;
+}
+body {
+  background-color: var(--bg);
+  color: var(--bone);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Creepster', cursive;
+  font-size: 3rem;
+  color: var(--pumpkin);
+}
+
+#contador {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.lapida {
+  background: rgba(242, 233, 220, 0.05);
+  border: 2px solid var(--pumpkin);
+  border-radius: 12px 12px 60px 60px;
+  padding: 1.2rem 1rem;
+  min-width: 80px;
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.etiqueta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--toxic);
+}
+
+.calabaza{
+  width: 120px;
+  margin: 2rem 0 1rem;
+  animation: flotar 4s ease-in-out infinite;
+
+}
+
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0)
+  }
+50% { 
+  transform: translateY(-12px);
+}
+
+}
